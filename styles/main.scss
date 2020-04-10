@@ -9,8 +9,11 @@
 @import "./cover";
 html {
   width: auto !important;
-  overflow-x: hidden !important;
   scroll-behavior: smooth;
+}
+html,
+body {
+  overflow-x: hidden !important;
 }
 body {
   font-family: "Poppins", sans-serif;

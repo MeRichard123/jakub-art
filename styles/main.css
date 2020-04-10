@@ -309,8 +309,12 @@ li.nav-item:hover::after {
 
 html {
   width: auto !important;
-  overflow-x: hidden !important;
   scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
 }
 
 body {
