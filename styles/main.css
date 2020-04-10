@@ -236,8 +236,8 @@ li.nav-item:hover::after {
 #cover-title path:nth-child(4) {
   stroke-dasharray: 550px;
   stroke-dashoffset: 550px;
-  -webkit-animation: lineAnim 1.5s ease forwards 2.2s;
-          animation: lineAnim 1.5s ease forwards 2.2s;
+  -webkit-animation: lineAnim 1.5s ease forwards 3.2s;
+          animation: lineAnim 1.5s ease forwards 3.2s;
 }
 
 #cover-title path:nth-child(5) {
@@ -250,8 +250,8 @@ li.nav-item:hover::after {
 #cover-title path:nth-child(6) {
   stroke-dasharray: 498px;
   stroke-dashoffset: 498px;
-  -webkit-animation: lineAnim 1.5s ease forwards 2.8s;
-          animation: lineAnim 1.5s ease forwards 2.8s;
+  -webkit-animation: lineAnim 1.5s ease forwards 3.8s;
+          animation: lineAnim 1.5s ease forwards 3.8s;
 }
 
 #cover-title path:nth-child(7) {
