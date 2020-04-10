@@ -215,22 +215,22 @@ li.nav-item:hover::after {
 #cover-title path:nth-child(1) {
   stroke-dasharray: 306px;
   stroke-dashoffset: 306px;
-  -webkit-animation: lineAnim 1.5s ease forwards 0.3s;
-          animation: lineAnim 1.5s ease forwards 0.3s;
+  -webkit-animation: lineAnim 1.5s ease forwards 1.3s;
+          animation: lineAnim 1.5s ease forwards 1.3s;
 }
 
 #cover-title path:nth-child(2) {
   stroke-dasharray: 480px;
   stroke-dashoffset: 480px;
-  -webkit-animation: lineAnim 1.5s ease forwards 0.6s;
-          animation: lineAnim 1.5s ease forwards 0.6s;
+  -webkit-animation: lineAnim 1.5s ease forwards 1.6s;
+          animation: lineAnim 1.5s ease forwards 1.6s;
 }
 
 #cover-title path:nth-child(3) {
   stroke-dasharray: 600px;
   stroke-dashoffset: 600px;
-  -webkit-animation: lineAnim 1.5s ease forwards 0.9s;
-          animation: lineAnim 1.5s ease forwards 0.9s;
+  -webkit-animation: lineAnim 1.5s ease forwards 1.9s;
+          animation: lineAnim 1.5s ease forwards 1.9s;
 }
 
 #cover-title path:nth-child(4) {
@@ -257,36 +257,36 @@ li.nav-item:hover::after {
 #cover-title path:nth-child(7) {
   stroke-dasharray: 554px;
   stroke-dashoffset: 554px;
-  -webkit-animation: lineAnim 1.5s ease forwards 2.1s;
-          animation: lineAnim 1.5s ease forwards 2.1s;
+  -webkit-animation: lineAnim 1.5s ease forwards 3.1s;
+          animation: lineAnim 1.5s ease forwards 3.1s;
 }
 
 #cover-title path:nth-child(8) {
   stroke-dasharray: 320px;
   stroke-dashoffset: 320px;
-  -webkit-animation: lineAnim 1.5s ease forwards 2.4s;
-          animation: lineAnim 1.5s ease forwards 2.4s;
+  -webkit-animation: lineAnim 1.5s ease forwards 3.4s;
+          animation: lineAnim 1.5s ease forwards 3.4s;
 }
 
 #cover-title path:nth-child(9) {
   stroke-dasharray: 400px;
   stroke-dashoffset: 400px;
-  -webkit-animation: lineAnim 1.5s ease forwards 2.7s;
-          animation: lineAnim 1.5s ease forwards 2.7s;
+  -webkit-animation: lineAnim 1.5s ease forwards 3.7s;
+          animation: lineAnim 1.5s ease forwards 3.7s;
 }
 
 #cover-title path:nth-child(10) {
   stroke-dasharray: 498px;
   stroke-dashoffset: 498px;
-  -webkit-animation: lineAnim 1.5s ease forwards 3s;
-          animation: lineAnim 1.5s ease forwards 3s;
+  -webkit-animation: lineAnim 1.5s ease forwards 4s;
+          animation: lineAnim 1.5s ease forwards 4s;
 }
 
 #cover-title path:nth-child(11) {
   stroke-dasharray: 498px;
   stroke-dashoffset: 498px;
-  -webkit-animation: lineAnim 1.5s ease forwards 3.3s;
-          animation: lineAnim 1.5s ease forwards 3.3s;
+  -webkit-animation: lineAnim 1.5s ease forwards 4.3s;
+          animation: lineAnim 1.5s ease forwards 4.3s;
 }
 
 @-webkit-keyframes lineAnim {
