@@ -733,5 +733,8 @@ footer .follow a:hover {
   #contact h1 {
     font-size: 2.5rem;
   }
+  #contact #about {
+    height: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
