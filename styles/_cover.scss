@@ -1,0 +1,101 @@
+.landing-page {
+  height: 100vh;
+  background: url("../assests/images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  svg {
+    width: 100%;
+  }
+  #cover-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: Filler 0.5s ease forwards 4.2s;
+  }
+  #cover-title mask {
+    animation: Filler 0.5s ease forwards 4.2s;
+  }
+}
+#cover-title path:nth-child(1) {
+  stroke-dasharray: 306px;
+  stroke-dashoffset: 306px;
+  animation: lineAnim 1.5s ease forwards 0.3s;
+}
+#cover-title path:nth-child(2) {
+  stroke-dasharray: 480px;
+  stroke-dashoffset: 480px;
+  animation: lineAnim 1.5s ease forwards 0.6s;
+}
+#cover-title path:nth-child(3) {
+  stroke-dasharray: 600px;
+  stroke-dashoffset: 600px;
+  animation: lineAnim 1.5s ease forwards 0.9s;
+}
+#cover-title path:nth-child(4) {
+  stroke-dasharray: 550px;
+  stroke-dashoffset: 550px;
+  animation: lineAnim 1.5s ease forwards 1.2s;
+}
+#cover-title path:nth-child(5) {
+  stroke-dasharray: 598px;
+  stroke-dashoffset: 598px;
+  animation: lineAnim 1.5s ease forwards 1.5s;
+}
+#cover-title path:nth-child(6) {
+  stroke-dasharray: 498px;
+  stroke-dashoffset: 498px;
+  animation: lineAnim 1.5s ease forwards 1.8s;
+}
+#cover-title path:nth-child(7) {
+  stroke-dasharray: 554px;
+  stroke-dashoffset: 554px;
+  animation: lineAnim 1.5s ease forwards 2.1s;
+}
+#cover-title path:nth-child(8) {
+  stroke-dasharray: 320px;
+  stroke-dashoffset: 320px;
+  animation: lineAnim 1.5s ease forwards 2.4s;
+}
+#cover-title path:nth-child(9) {
+  stroke-dasharray: 400px;
+  stroke-dashoffset: 400px;
+  animation: lineAnim 1.5s ease forwards 2.7s;
+}
+#cover-title path:nth-child(10) {
+  stroke-dasharray: 498px;
+  stroke-dashoffset: 498px;
+  animation: lineAnim 1.5s ease forwards 3s;
+}
+#cover-title path:nth-child(11) {
+  stroke-dasharray: 498px;
+  stroke-dashoffset: 498px;
+  animation: lineAnim 1.5s ease forwards 3.3s;
+}
+
+@keyframes lineAnim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes Filler {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  svg {
+    height: 10vh;
+  }
+}
+@media screen and (max-width: 700px) {
+  svg {
+    height: 6vh;
+  }
+}

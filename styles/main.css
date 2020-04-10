@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+}
+
+.nav-bar .logo {
+  margin: 2rem;
+  margin-right: auto;
+  font-family: "Permanent Marker", cursive;
+}
+
+.nav-bar .menu-toggle {
+  display: none;
+}
+
+.nav-bar .nav-items {
+  -webkit-transform: translateX(350%);
+          transform: translateX(350%);
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 10vh;
+}
+
+.nav-bar .nav-items .nav-item {
+  margin: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-bar .nav-items .nav-item a {
+  color: white;
+  text-decoration: none;
+}
+
+li.nav-item::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+li.nav-item:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-bar {
+    position: initial;
+  }
+  .nav-bar .nav-items {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    background: #1e272e;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    list-style: none;
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .nav-bar .nav-items .nav-item {
+    margin: 2.5rem 0;
+  }
+  .nav-bar .menu-toggle {
+    display: block;
+    font-size: 1rem;
+    border: 0;
+    background: 0;
+    padding: 1em;
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    cursor: pointer;
+    z-index: 9999;
+    margin: 2rem 0;
+  }
+  .nav-bar .hamburger,
+  .nav-bar .hamburger::before {
+    content: "";
+    display: block;
+    background: #ebebd3;
+    height: 3px;
+    width: 1.75rem;
+    border-radius: 3px;
+    -webkit-transition: all ease-in-out 500ms, opacity linear 300ms;
+    transition: all ease-in-out 500ms, opacity linear 300ms;
+  }
+  .nav-bar .hamburger::before {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    width: 2.2rem;
+  }
+  .nav-bar .close {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .open .hamburger {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .open .hamburger::before {
+    width: 1.75rem;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .scroll-lock {
+    overflow-y: hidden !important;
+  }
+}
+
+.landing-page {
+  height: 100vh;
+  background: url("../assests/images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.landing-page svg {
+  width: 100%;
+}
+
+.landing-page #cover-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: Filler 0.5s ease forwards 4.2s;
+          animation: Filler 0.5s ease forwards 4.2s;
+}
+
+.landing-page #cover-title mask {
+  -webkit-animation: Filler 0.5s ease forwards 4.2s;
+          animation: Filler 0.5s ease forwards 4.2s;
+}
+
+#cover-title path:nth-child(1) {
+  stroke-dasharray: 306px;
+  stroke-dashoffset: 306px;
+  -webkit-animation: lineAnim 1.5s ease forwards 0.3s;
+          animation: lineAnim 1.5s ease forwards 0.3s;
+}
+
+#cover-title path:nth-child(2) {
+  stroke-dasharray: 480px;
+  stroke-dashoffset: 480px;
+  -webkit-animation: lineAnim 1.5s ease forwards 0.6s;
+          animation: lineAnim 1.5s ease forwards 0.6s;
+}
+
+#cover-title path:nth-child(3) {
+  stroke-dasharray: 600px;
+  stroke-dashoffset: 600px;
+  -webkit-animation: lineAnim 1.5s ease forwards 0.9s;
+          animation: lineAnim 1.5s ease forwards 0.9s;
+}
+
+#cover-title path:nth-child(4) {
+  stroke-dasharray: 550px;
+  stroke-dashoffset: 550px;
+  -webkit-animation: lineAnim 1.5s ease forwards 1.2s;
+          animation: lineAnim 1.5s ease forwards 1.2s;
+}
+
+#cover-title path:nth-child(5) {
+  stroke-dasharray: 598px;
+  stroke-dashoffset: 598px;
+  -webkit-animation: lineAnim 1.5s ease forwards 1.5s;
+          animation: lineAnim 1.5s ease forwards 1.5s;
+}
+
+#cover-title path:nth-child(6) {
+  stroke-dasharray: 498px;
+  stroke-dashoffset: 498px;
+  -webkit-animation: lineAnim 1.5s ease forwards 1.8s;
+          animation: lineAnim 1.5s ease forwards 1.8s;
+}
+
+#cover-title path:nth-child(7) {
+  stroke-dasharray: 554px;
+  stroke-dashoffset: 554px;
+  -webkit-animation: lineAnim 1.5s ease forwards 2.1s;
+          animation: lineAnim 1.5s ease forwards 2.1s;
+}
+
+#cover-title path:nth-child(8) {
+  stroke-dasharray: 320px;
+  stroke-dashoffset: 320px;
+  -webkit-animation: lineAnim 1.5s ease forwards 2.4s;
+          animation: lineAnim 1.5s ease forwards 2.4s;
+}
+
+#cover-title path:nth-child(9) {
+  stroke-dasharray: 400px;
+  stroke-dashoffset: 400px;
+  -webkit-animation: lineAnim 1.5s ease forwards 2.7s;
+          animation: lineAnim 1.5s ease forwards 2.7s;
+}
+
+#cover-title path:nth-child(10) {
+  stroke-dasharray: 498px;
+  stroke-dashoffset: 498px;
+  -webkit-animation: lineAnim 1.5s ease forwards 3s;
+          animation: lineAnim 1.5s ease forwards 3s;
+}
+
+#cover-title path:nth-child(11) {
+  stroke-dasharray: 498px;
+  stroke-dashoffset: 498px;
+  -webkit-animation: lineAnim 1.5s ease forwards 3.3s;
+          animation: lineAnim 1.5s ease forwards 3.3s;
+}
+
+@-webkit-keyframes lineAnim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes lineAnim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes Filler {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+@keyframes Filler {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  svg {
+    height: 10vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  svg {
+    height: 6vh;
+  }
+}
+
+html {
+  width: auto !important;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#work {
+  height: 100vh;
+  background-color: blue;
+}
+
+#about {
+  height: 200vh;
+  background: green;
+}
+
+#contact {
+  height: 100vh;
+  background-color: red;
+}
+
+.gotop-btn {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+i {
+  color: #515151 !important;
+  font-size: 2.5rem !important;
+  background: #515151;
+}
+
+@media screen and (min-width: 900px) {
+  .gotop-btn {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import "./nav";
+@import "./cover";
+html {
+  width: auto !important;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+#work {
+  height: 100vh;
+  background-color: blue;
+}
+#about {
+  height: 200vh;
+  background: green;
+}
+#contact {
+  height: 100vh;
+  background-color: red;
+}
+.gotop-btn {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+i {
+  color: #515151 !important;
+  font-size: 2.5rem !important;
+  background: #515151;
+}
+
+@media screen and (min-width: 900px) {
+  .gotop-btn {
+    display: none;
+  }
+}
