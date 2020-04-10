@@ -5,44 +5,95 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
-}
 html,
 body {
-  overflow-x: hidden !important;
-  width: 100vw !important;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Poppins", sans-serif;
 }
 @import "./nav";
 @import "./cover";
+
+@import "./about";
+
+#about {
+  height: 100vh;
+  background: url("../assests/images/about-wall.jpg");
+  background-size: cover;
+}
+@import "./work";
 #work {
   height: 100vh;
-  background-color: blue;
-}
-#about {
-  height: 200vh;
-  background: green;
+  background: url("../assests/images/workcover.jpg");
+  background-size: cover;
 }
 #contact {
   height: 100vh;
-  background-color: red;
+  background-image: url("../assests/images/contactCover.jpg");
+  background-size: cover;
 }
+@import "./contact";
+
 .gotop-btn {
   position: fixed;
   bottom: 5px;
-  right: 5px;
+  right: 20px;
+  z-index: 500;
 }
 i {
-  color: #515151 !important;
+  color: #2d3436 !important;
   font-size: 2.5rem !important;
+  background: #2d3436;
+}
+footer {
+  display: flex;
+  padding: 2.5rem;
+  flex: 1 1 20rem;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 0.9rem;
   background: #515151;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .credits {
+    font-size: 0.7rem;
+    .dev {
+      font-size: 0.9rem;
+    }
+  }
+  .developer {
+    text-decoration: underline;
+  }
+  .follow {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    a {
+      font-size: 1.5rem;
+      transition: all 0.6s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 900px) {
   .gotop-btn {
     display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  #contact {
+    h1 {
+      font-size: 2.5rem;
+    }
   }
 }

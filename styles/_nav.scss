@@ -1,6 +1,15 @@
+html,
+body {
+  height: 100%;
+  overflow-x: hidden !important;
+  width: 100%;
+  position: relative;
+}
+
 .nav-bar {
   display: flex;
   height: 10vh;
+  z-index: 999;
   align-items: center;
   color: white;
   position: fixed;
@@ -9,12 +18,16 @@
     margin: 2rem;
     margin-right: auto;
     font-family: "Permanent Marker", cursive;
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
   .menu-toggle {
     display: none;
   }
   .nav-items {
-    transform: translateX(350%);
+    transform: translateX(calc(100vw - 150%));
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -51,24 +64,24 @@ li.nav-item:hover::after {
   .nav-bar {
     position: initial;
     .nav-items {
-      transform: translateX(0);
       background: #1e272e;
-      width: 50%;
-      text-align: center;
+      flex-direction: column;
+      justify-content: center;
       position: absolute;
       right: 0;
       top: 0;
+      width: 50%;
       height: 100%;
-      z-index: 5;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      list-style: none;
-      transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      z-index: 999;
+      transform: translateX(0);
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       .nav-item {
         margin: 2.5rem 0;
+        text-decoration: none;
+        list-style: none;
+        align-self: center;
+        text-align: center;
       }
     }
     .menu-toggle {
@@ -112,6 +125,9 @@ li.nav-item:hover::after {
     transform: rotate(90deg);
   }
   .scroll-lock {
+    height: 100%;
     overflow-y: hidden !important;
+    width: 100%;
+    position: relative;
   }
 }

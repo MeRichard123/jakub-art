@@ -1,0 +1,104 @@
+.title {
+  color: #1e272e;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.owl-carousel {
+  padding: 4rem;
+  text-align: center;
+  z-index: 80;
+}
+
+.card {
+  height: 60vh;
+  background: white;
+  margin: auto;
+  width: 60vw;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: 0.4s;
+  text-transform: uppercase;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: #101010;
+    &:hover {
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    }
+  }
+  .art {
+    width: auto;
+    height: 87%;
+  }
+  .bird {
+    background: url("../assests/images/bird.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .pancake {
+    background: url("../assests/images/pancake.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  //   New
+  .town {
+    background: url("../assests/images/town.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .portrait {
+    background: url("../assests/images/befAfterProtraint.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .skeleton {
+    background: url("../assests/images/skeleton.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .diamond {
+    background: url("../assests/images/diamond.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .skull {
+    background: url("../assests/images/skull.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .halfFace {
+    background: url("../assests/images/half face.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .infos {
+    padding: 14px 24px;
+    background: #fff;
+    transition: 0.4s;
+    h2 {
+      font-weight: 300;
+      color: #101010;
+    }
+  }
+  &:hover .infos {
+    transform: translateY(-85px);
+    a {
+      color: #101010 !important;
+    }
+    .seats,
+    p,
+    .details {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .owl-carousel {
+    padding: 4rem 0;
+  }
+  .card {
+    width: 100vw;
+  }
+}

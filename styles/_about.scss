@@ -1,0 +1,77 @@
+#about h1 {
+  color: #1e272e;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.profile-wrapper {
+  background: rgba($color: #1e272e, $alpha: 0.7);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 3.5rem;
+  padding: 3rem 3rem 3rem 3rem;
+  align-content: center;
+  justify-items: center;
+  p {
+    align-self: center;
+    font-size: 1.5rem;
+    color: white;
+  }
+}
+.profile {
+  cursor: pointer;
+  width: 350px;
+  height: 350px;
+  img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+.front,
+.back {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform 0.6s linear;
+}
+.front img {
+  height: 100%;
+}
+.front {
+  transform: perspective(600px) rotateY(0deg);
+}
+.back {
+  transform: perspective(600px) rotateY(180deg);
+}
+.profile:hover > .front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+.profile:hover > .back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+@media screen and (max-width: 800px) {
+  .profile {
+    width: 200px;
+    height: 200px;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .front,
+  .back {
+    width: 200px;
+    height: 200px;
+  }
+  .profile-wrapper {
+    margin-top: 0;
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
