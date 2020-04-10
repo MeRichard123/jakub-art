@@ -5,19 +5,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-@import "./nav";
-@import "./cover";
 html {
   scroll-behavior: smooth;
 }
 html,
 body {
   overflow-x: hidden !important;
-  width: auto !important;
+  width: 100vw !important;
 }
 body {
   font-family: "Poppins", sans-serif;
 }
+@import "./nav";
+@import "./cover";
 #work {
   height: 100vh;
   background-color: blue;

@@ -6,6 +6,20 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+  width: 100vw !important;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,20 +319,6 @@ li.nav-item:hover::after {
   svg {
     height: 6vh;
   }
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-html,
-body {
-  overflow-x: hidden !important;
-  width: auto !important;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
 }
 
 #work {
