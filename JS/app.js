@@ -33,3 +33,28 @@ $(document).ready(function () {
     },
   });
 });
+
+function images(x) {
+  if (x.matches) {
+    lightbox.option({
+      resizeDuration: 200,
+      wrapAround: false,
+      positionFromTop: 1460,
+      fitImagesInViewport: true,
+      maxHeight: window.innerHeight - 60,
+      disableScrolling: false,
+    });
+  } else {
+    lightbox.option({
+      resizeDuration: 200,
+      wrapAround: false,
+      positionFromTop: 1460,
+      fitImagesInViewport: false,
+      maxHeight: window.innerHeight - 60,
+      disableScrolling: true,
+    });
+  }
+}
+var x = window.matchMedia("(max-width:700px)");
+images(x);
+x.addListener(images);

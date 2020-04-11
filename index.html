@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/owl.carousel.min.css" />
     <link rel="stylesheet" href="./styles/owl.theme.default.css" />
+    <link rel="stylesheet" href="./styles/lightbox.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <title>Jakub Coric</title>
   </head>
@@ -170,7 +171,7 @@
         <h1 class="title">My Work</h1>
         <div class="owl-carousel owl-theme">
           <div class="card">
-            <a href="./assests/images/bird.png">
+            <a href="./assests/images/bird.png" data-lightbox="gallery">
               <div class="art bird"></div>
             </a>
             <div class="infos">
@@ -183,7 +184,7 @@
           </div>
           <!-- Card 2 -->
           <div class="card">
-            <a href="./assests/images/pancake.png">
+            <a href="./assests/images/pancake.png" data-lightbox="gallery">
               <div class="art pancake"></div>
             </a>
             <div class="infos">
@@ -195,7 +196,7 @@
           </div>
           <!-- Card 3 -->
           <div class="card">
-            <a href="./assests/images/town.png">
+            <a href="./assests/images/town.png" data-lightbox="gallery">
               <div class="art town"></div>
             </a>
             <div class="infos">
@@ -207,7 +208,10 @@
           </div>
           <!-- Card 4 -->
           <div class="card">
-            <a href="./assests/images/befAfterProtraint.png">
+            <a
+              href="./assests/images/befAfterProtraint.png"
+              data-lightbox="gallery"
+            >
               <div class="art portrait"></div>
             </a>
             <div class="infos">
@@ -219,7 +223,7 @@
           </div>
           <!-- Card 5 -->
           <div class="card">
-            <a href="./assests/images/skeleton.png">
+            <a href="./assests/images/skeleton.png" data-lightbox="gallery">
               <div class="art skeleton"></div>
             </a>
             <div class="infos">
@@ -231,7 +235,7 @@
           </div>
           <!-- Card 6 -->
           <div class="card">
-            <a href="./assests/images/diamond.png">
+            <a href="./assests/images/diamond.png" data-lightbox="gallery">
               <div class="art diamond"></div>
             </a>
             <div class="infos">
@@ -244,7 +248,7 @@
           </div>
           <!-- Card 7 -->
           <div class="card">
-            <a href="./assests/images/skull.png">
+            <a href="./assests/images/skull.png" data-lightbox="gallery">
               <div class="art skull"></div>
             </a>
             <div class="infos">
@@ -257,7 +261,7 @@
           </div>
           <!-- Card 8 -->
           <div class="card">
-            <a href="./assests/images/half face.png">
+            <a href="./assests/images/half face.png" data-lightbox="gallery">
               <div class="art halfFace"></div
             ></a>
             <div class="infos">
@@ -284,7 +288,7 @@
           <label for="messgae">
             <span>Message</span>
           </label>
-          <textarea name="message"></textarea>
+          <textarea name="message" rows="4"></textarea>
           <input class="button" type="submit" value="Send" />
         </form>
       </section>
@@ -319,6 +323,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
   <script src="./JS/owl.carousel.js"></script>
+  <script src="./JS/lightbox.min.js"></script>
   <script src="./JS/app.js"></script>
   <script>
     $(document).ready(function () {

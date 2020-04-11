@@ -92,11 +92,13 @@ footer {
 }
 @media screen and (max-width: 900px) {
   #contact {
+    height: auto;
     h1 {
       font-size: 2.5rem;
     }
-    #about {
-      height: auto;
-    }
+  }
+  #about,
+  #work {
+    height: auto !important;
   }
 }
