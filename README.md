@@ -14,6 +14,8 @@ Features:
 4. Contact Section 
 5. Mobile Friendly 
 
+==================
+
 Known issues:
 ====
 
