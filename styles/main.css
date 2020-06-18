@@ -566,7 +566,7 @@ li.nav-item:hover::after {
 }
 
 #work {
-  height: 100vh;
+  min-height: 100vh;
   background: url("../assests/images/workcover.jpg");
   background-size: cover;
 }
@@ -590,7 +590,7 @@ form {
   display: flex;
   margin: auto;
   width: 50%;
-  height: 75vh;
+  min-height: 75vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

@@ -24,7 +24,7 @@ body {
 }
 @import "./work";
 #work {
-  height: 100vh;
+  min-height: 100vh;
   background: url("../assests/images/workcover.jpg");
   background-size: cover;
 }
