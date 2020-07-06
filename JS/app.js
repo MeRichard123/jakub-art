@@ -1,3 +1,8 @@
+const nav = document.querySelector(".nav-bar");
+window.addEventListener("scroll", () => {
+  console.log("Scroll test");
+});
+
 $(".menu-toggle").click(function () {
   $(".nav-items").toggleClass("close");
   $(".menu-toggle").toggleClass("open");
