@@ -18,7 +18,5 @@ Features:
 
 Known issues:
 ====
-
-1. Form is squished when a keyboard is opened on mobile. 
-2. The Info hover states for projects shify height on tablet and are more visible than should be 
+1. The Info hover states for projects shift height on tablet and render more visible than should be 
 
